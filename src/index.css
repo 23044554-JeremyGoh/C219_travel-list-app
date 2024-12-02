@@ -58,7 +58,7 @@ h3 {
 button,
 select,
 input {
-  background-color: #E5E1DA;
+  background-color: #ffffff;
   color: #5a3e2b;
   font-family: inherit;
   border: none;
@@ -70,11 +70,12 @@ input {
   transition: all 0.3s ease;
 }
 
-button:hover,
-select:hover,
-input:hover {
-  background-color: #89A8B2;
+button:hover
+{
+  background-color: #f4a226;
   color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .add-form button {
@@ -84,7 +85,9 @@ input:hover {
 }
 
 .add-form button:hover {
-  background-color: #89A8B2;
+  background-color: #76c7ad;
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .list {

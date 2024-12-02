@@ -1,5 +1,5 @@
 import { useState } from 'react';
-export default function Form({ onAddItem }) {
+export default function Form({ onAddItems, handleClearItems }) {
     const [description, setDescription] = useState('');
     const [quantity, setQuantity] = useState(1);
   
@@ -13,7 +13,7 @@ export default function Form({ onAddItem }) {
         packed: false,
       };
   
-      onAddItem(newItem);
+      onAddItems(newItem);
   
       setDescription('');
       setQuantity(1);
@@ -29,6 +29,7 @@ export default function Form({ onAddItem }) {
         </select>
         <input type="text" placeholder="Item…" value={description} onChange={(e) => setDescription(e.target.value)} />
         <button type="submit">Add</button>
+        <button type="button" onClick={handleClearItems}>Clear All Items</button>
       </form>
     );
   }
