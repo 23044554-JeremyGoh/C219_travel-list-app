@@ -24,6 +24,10 @@ function App() {
 
   }
 
+  function clearAllItems(){
+    setItems([]);
+  }
+
   return (
     <div className="app">
       <Logo />
@@ -33,6 +37,7 @@ function App() {
       onUpdateItem={handleUpdateItem}/>
       <Stats
       items= {items} />
+      <button onClick={clearAllItems}>Clear All Items</button>
     </div>
   );
 }
