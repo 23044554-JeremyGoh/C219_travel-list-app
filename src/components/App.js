@@ -4,14 +4,10 @@ import PackingList from './PackingList';
 import Stats from './Stats';
 import Form from './Form';
 
-// Initial packing items
-const initialItems = [
-  { id: 1, description: "Shirt", quantity: 5, packed: false },
-  { id: 2, description: "Pants", quantity: 2, packed: false },
-];
+
 
 function App() {
-  const [items, setItems] = useState(initialItems);
+  const [items, setItems] = useState([]);
 
   function handleAddItems(item) {
     setItems((prevItems) => [...prevItems, item]);
